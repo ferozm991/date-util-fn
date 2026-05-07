@@ -1,0 +1,37 @@
+{
+  "name": "date-util-fn",
+  "version": "1.1.2",
+  "description": "Utilities helps to quick date requirements.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ferozm991/date-util-fn.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ferozm991/date-util-fn/issues"
+  },
+  "homepage": "https://github.com/ferozm991/date-util-fn#readme",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "bump:patch": "npm version patch",
+    "bump:minor": "npm version minor",
+    "bump:major": "npm version major",
+    "bump:patch:nogit": "npm version patch --no-git-tag-version",
+    "bump:minor:nogit": "npm version minor --no-git-tag-version",
+    "bump:major:nogit": "npm version major --no-git-tag-version",
+    "version": "npm run build",
+    "prepublishOnly": "npm run build",
+    "publish:npm": "npm publish"
+  },
+  "files": [
+    "dist/",
+    "README.md"
+  ],
+  "author": "Feroz Mujawar",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
